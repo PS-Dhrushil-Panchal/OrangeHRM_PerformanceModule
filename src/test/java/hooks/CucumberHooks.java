@@ -16,7 +16,7 @@ public class CucumberHooks {
 
     @After
     public void AfterScenario() throws IOException, InterruptedException{
-    	Thread.sleep(2000);
+    	Thread.sleep(5000);
     	BaseClass.stopDriver();
     }
 }

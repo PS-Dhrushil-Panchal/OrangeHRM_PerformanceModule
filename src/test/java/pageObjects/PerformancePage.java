@@ -49,6 +49,7 @@ public class PerformancePage extends SeleniumMethods{
 		ClearText(ToDate);
 		sendKeys(ToDate, "2024-01-01");
 	}
+	
 	public void ClickSearch() {
 		clickOn(SubmitBtn);
 	}

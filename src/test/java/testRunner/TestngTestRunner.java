@@ -6,7 +6,7 @@ import io.cucumber.testng.CucumberOptions;
     features = ".//features",
     glue = {"stepDefinitions", "hooks"},
     monochrome = true,
-    tags="@Performance",
+    tags="@claim",
     plugin = {
         "pretty",
         "html:target/cucumber.html",

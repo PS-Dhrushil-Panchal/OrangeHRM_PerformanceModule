@@ -34,6 +34,6 @@ Scenario: Generate report with invalid input of dates
   And clicks on the generate report button
   Then error should be generated of invalid dates
     | FromDate   | ToDate     | error                          |
-    | 2024-01-01 | 2023-01-01 | To date should be after from date |
+    | 					 | 2023-01-01 | To date should be after from date |
     | 2024/01/01 | 2024/03/01 | Should be a valid date in yyyy-dd-mm format|
     | 29-01-2024 | 24-01-2024 | Should be a valid date in yyyy-dd-mm format|

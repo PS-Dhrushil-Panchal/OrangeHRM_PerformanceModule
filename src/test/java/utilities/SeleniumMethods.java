@@ -9,6 +9,7 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -50,11 +51,21 @@ public class SeleniumMethods {
 		    .perform();
 	}
 
+	public void Scroller() {
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		js.executeScript("window.scrollBy(0, 1000)");
+	}
+	
 	// Handle send keys action
 	public void sendKeys(By locator, String str) {
 		WebElement el = driver.findElement((locator));
 		el.clear();
 		el.sendKeys(str);
+	}
+	public void sendKeysInt(By locator, int a) {
+		WebElement el = driver.findElement((locator));
+		el.clear();
+		el.sendKeys(Integer.toString(a));
 	}
 
 	// Store text from a locatorl
